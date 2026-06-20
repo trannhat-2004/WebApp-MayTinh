@@ -11,31 +11,36 @@
     <div>
                             <h3>CHƯƠNG TRÌNH MÁY TÍNH</h3>
         <div style = "margin-bottom: 10px; text-align: center;">
-            <input type = "text" style = "margin-right: auto" readonly>
+            <input type = "text" id = "ketqua" style = "margin-right: auto" readonly>
         </div>
 
         <div id = "divAllSo">
             <div id = "divSo" >
-                <button id = "So1" style = "width: 50px; ">1</button>
-                <button id = "So2" style = "width: 50px; ">2</button>
-                <button id = "So3" style = "width: 50px; ">3</button>
-                <button id = "Cong" style = "width: 50px; ">+</button>
+                <button id = "So1" value="1" onclick="AddNumber('So1')">1</button>
+                <button id = "So2" value="2" onclick="AddNumber('So2')">2</button>
+                <button id = "So3" value="3" onclick="AddNumber('So3')">3</button>
+                <button id = "Cong" onclick="Cong()">+</button>
             </div>
 
             <div id = "divSo">
-                <button id = "So4" style = "width: 50px; ">4</button>
-                <button id = "So5" style = "width: 50px; ">5</button>
-                <button id = "So6" style = "width: 50px; ">6</button>
-                <button id = "Tru" style = "width: 50px; ">-</button>
+                <button id = "So4" value="4" onclick="AddNumber('So4')">4</button>
+                <button id = "So5" value="5" onclick="AddNumber('So5')">5</button>
+                <button id = "So6" value="6" onclick="AddNumber('So6')">6</button>
+                <button id = "Tru" >-</button>
             </div>
 
             <div id = "divSo">
-                <button id = "So7" style = "width: 50px; ">7</button>
-                <button id = "So8" style = "width: 50px; ">8</button>
-                <button id = "So9" style = "width: 50px; ">9</button>
-                <button id = "So0" style = "width: 50px; ">0</button>
+                <button id = "So7" value="7" onclick="AddNumber('So7')">7</button>
+                <button id = "So8" value="8" onclick="AddNumber('So8')">8</button>
+                <button id = "So9" value="9" onclick="AddNumber('So9')">9</button>
+                <button id = "So0" value="0" onclick="AddNumber('So0')">0</button>
             </div>
 
+            <div id = "divSo">
+                <button id = "reset" onclick="AddNumber('reset')">C</button>
+                <button id = "Xoa"   onclick="AddNumber('Xoa')">Xóa</button>
+                <button id = "TinhToan"   onclick="">=</button>
+            </div>
         </div>
         
     </div>

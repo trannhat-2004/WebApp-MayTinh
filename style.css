@@ -2,8 +2,25 @@ h3 {
     text-align: center;
 }
 
-#divSo {
-    text-align: center;
-    margin-bottom: 20px;
+#divAllSo {
+    display: grid;
+    /* Chia làm 4 cột, mỗi cột rộng 50px */
+    grid-template-columns: repeat(4, 50px);
+    /* Khoảng cách giữa các nút là 5px */
+    gap: 5px; 
+    /* Canh giữa bàn phím */
+    justify-content: center; 
+    margin-top: 20px;
 }
 
+/* Format tất cả các nút bên trong */
+#divAllSo button {
+    height: 30px; /* Bạn có thể thêm chiều cao cho đẹp */
+    /* Bỏ style width inline đi vì grid đã lo việc đó */
+    width: 100%; 
+}
+
+#ketqua {
+    width: 200px;
+    height: 50px;
+}
