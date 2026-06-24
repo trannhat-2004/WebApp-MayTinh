@@ -8,10 +8,11 @@
     <script src = "script.js"></script>
 </head>
 <body>
-    <div>
+    <div id = "all">
                             <h3>CHƯƠNG TRÌNH MÁY TÍNH</h3>
         <div style = "margin-bottom: 10px; text-align: center;">
-            <input type = "text" id = "ketqua" style = "margin-right: auto" readonly>
+            <input type = "text" id = "ketqua" readonly>
+            
         </div>
 
         <div id = "divAllSo">
@@ -19,14 +20,14 @@
                 <button id = "So1" value="1" onclick="AddNumber('So1')">1</button>
                 <button id = "So2" value="2" onclick="AddNumber('So2')">2</button>
                 <button id = "So3" value="3" onclick="AddNumber('So3')">3</button>
-                <button id = "Cong" onclick="Cong()">+</button>
+                <button id = "Cong" value = '+' onclick="Cong()">+</button>
             </div>
 
             <div id = "divSo">
                 <button id = "So4" value="4" onclick="AddNumber('So4')">4</button>
                 <button id = "So5" value="5" onclick="AddNumber('So5')">5</button>
                 <button id = "So6" value="6" onclick="AddNumber('So6')">6</button>
-                <button id = "Tru" >-</button>
+                <button id = "Tru" value = '-' onclick="Tru()">-</button>
             </div>
 
             <div id = "divSo">
@@ -37,9 +38,9 @@
             </div>
 
             <div id = "divSo">
-                <button id = "reset" onclick="AddNumber('reset')">C</button>
-                <button id = "Xoa"   onclick="AddNumber('Xoa')">Xóa</button>
-                <button id = "TinhToan"   onclick="">=</button>
+                <button id = "reset"      onclick="AddNumber('reset')">C</button>
+                <button id = "Xoa"        onclick="AddNumber('Xoa')">Xóa</button>
+                <button id = "TinhToan"   onclick="KetQua()">=</button>
             </div>
         </div>
         
