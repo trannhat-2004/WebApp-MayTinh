@@ -33,8 +33,9 @@ function XoaPhuongThuc(id){
 // Chu nang Cong
 function Cong(){
     let a = document.getElementById('ketqua').value;
-
-    if(!isNaN(a)){
+    if (a.length === 0) return;
+    if(!isNaN(a[a.length-1])){
+        console.log(a[a.length-1]);
         a += ' + ';
         document.getElementById('ketqua').value = a;
     }else{
@@ -46,7 +47,7 @@ function Cong(){
 //Chuc nang Tru
 function Tru(){
     let a = document.getElementById('ketqua').value;
-
+    if( a.length === 0) return;
     if(!isNaN(a)){
         a += ' - ';
         document.getElementById('ketqua').value = a;
