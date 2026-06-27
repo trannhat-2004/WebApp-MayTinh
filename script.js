@@ -60,6 +60,43 @@ function Tru(){
 }
 
 // Xu ly ket qua
-function KetQua(){
+function TinhToan() {
+    let a = document.getElementById('ketqua').value;
+    let so = '';
+    let stack = [];
+
     
-}      
+    for (let i = 0; i < a.length; i++) {
+        let char = a[i];
+
+        if (char === ' ') {
+            continue; 
+        }
+
+        if (!isNaN(char)) { 
+          
+            so += char; 
+        } else { 
+           
+            stack.push(Number(so));
+            stack.push(char);       
+            so = '';                
+        }
+    }
+    
+    
+    if (so !== '') {
+        stack.push(Number(so));
+    }
+
+    
+    if (stack.length === 3) {
+        let ketQuaTinh;
+        if (stack[1] === '+') {
+            ketQuaTinh = stack[0] + stack[2];
+        } else if (stack[1] === '-') {
+            ketQuaTinh = stack[0] - stack[2];
+        }
+        document.getElementById('ketqua').value = ketQuaTinh;
+    }
+}
